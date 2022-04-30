@@ -1,13 +1,424 @@
-body {
+html, body {
+  height: 100%;
+}
+
+body{
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
+  font-family: 'Montserrat', sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+}
+
+#root {
+  height: 100%;
+  
+}
+
+.app{
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+#footer{
+  margin-top: auto;
+}
+
+.footer-wrapper{
+  padding: 60px 90px;
+  background-color: #000;
+  padding-bottom: 10px;
+  margin-top: 60px;
+}
+
+::-webkit-scrollbar{
+  background: #C4C4C4;
+  width: 0.9rem;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: #000;
+  border-radius: 9px;
+  width: 0.9rem;
 }
 
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
+}
+.navbar{
+  background-color: #fff;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+.navbar-brand {
+  position:center;
+}
+.navbar-brand span{
+  font-style: italic;
+  font-weight: 700;
+}
+
+.navbar-toggler {
+  border: none;
+  background-color: none;
+  padding: 0;
+}
+
+@media only screen and (max-width: 991px) {
+  #hamburger{
+    position: absolute;
+    width: 30%;
+    margin-top: 10px;
+    background: rgba(255, 255, 255, 0.9);
+    box-shadow: 3px #fff;
+    }
+    .nav-link{
+      border-bottom: 3px solid #fff;
+      text-align: center;
+    }
+    .nav-link:hover{
+      box-shadow: 0 5px 15px rgba(145, 92, 182, .4);
+    }
+}
+.navbar-toggler:active, .navbar-toggler:focus {
+  border: none;
+  box-shadow: none;
+}
+
+
+
+.nav-icons{
+  font-size: 1.3rem;
+}
+.nav-icons-margin{
+  margin-left: 10px;
+}
+
+.nav-link{
+  font-size: 1rem;
+  padding: .8rem 1rem;
+  font-weight: 600;
+}
+
+.navbar .item {
+  flex: 1 1 0px;
+}
+
+
+.home {
+  margin: 0 40px;
+}
+
+.hero .mt-auto{
+  margin-top: auto;
+}
+.hero h2, .mailing-list h2  {
+  font-weight: 1000;
+  margin-bottom: 18px;
+  text-align: center;
+  font-size: 40px;
+  line-height: 0.9;
+
+}
+.hero p, .mailing-list .p{
+  font-size: .9rem;
+  margin-bottom: 9px;
+  text-align: center;
+}
+
+.hero .btn, .mailing-list .btn{
+  border-radius: 0px;
+  padding: 11px 10px;
+  width: 100%;
+  display: block;
+  margin: auto;
+}
+
+.banner {
+  margin-top: 30px;
+  padding: 0;
+  width: 100%;
+  max-width: none;
+  /* min-height: 100vh; */
+}
+
+@media only screen and (min-width: 575px) {
+  .banner{
+    width: 90%;
+  }
+}
+
+
+#categories {
+  margin-top: 50px;
+}
+
+
+
+
+
+#categories .category {
+  margin: 0px;
+  padding: 5px;
+}
+
+
+
+
+#categories .category .category-wrapper{
+  position: relative;
+  color: #fff;
+  background-color: black;
+  padding: 40%;
+  box-sizing: border-box;
+  width: 100%;
+  height: 0;
+}
+
+#categories .category .category-wrapper h2{
+  position: absolute;
+  top: 5%;
+  left: 3%;
+  font-size: 1.9rem;
+  line-height: 1.2;
+  max-width: 90%;
+  overflow-wrap: break-word;
+  font-weight: 600;
+}
+
+#categories .category .category-wrapper .category-link{
+  position: absolute;
+  bottom: 3%;
+  left: 6%;
+  text-decoration: none;
+  color: #fff;
+}
+
+
+.product-list{
+  margin-top: 40px;
+  width: 100%;
+  
+}
+
+.product-list .product-scroller{
+  display: grid;
+  grid-auto-flow: column;
+  gap: 10px;
+  overflow-x: auto;
+  overscroll-behavior-inline: contain;
+  padding-bottom: 20px;
+}
+
+.product-list .product-scroller::-webkit-scrollbar{
+  background: #C4C4C4;
+  height: 10px;
+  
+}
+
+.product-list .product-scroller::-webkit-scrollbar-thumb {
+  background-color: #000;
+  border-radius: 0px;
+}
+
+.snaps-inline{
+  scroll-snap-type: inline mandatory;
+}
+
+.snaps-inline > *{
+  scroll-snap-align: start;
+}
+
+.product-list .row .wrapper{
+  width: fit-content;
+}
+
+
+
+
+.product-list .image{
+  width: 310px;
+  height: 290px;
+  background: #C4C4C4;
+  margin-bottom: 7px;
+}
+
+.product-list a, .product-details a{
+  text-decoration: none;
+  color: #000;
+}
+
+
+.product-list #name, .product-details #name{
+  
+  margin-bottom: 0;
+}
+
+.product-list #price, .product-details #price{
+  font-weight: 600;
+
+}
+
+/* Mailing List */
+#mailing-list h2{
+  margin-bottom: 6px;
+}
+
+#mailing-list .btn{
+  background-color: #fff;
+  color: #000;
+  width: 60%;
+  margin: 0 auto;
+  display: block;
+  padding: 0;
+  border: none;
+}
+
+#mailing-list .btn .div-in-link{
+  box-sizing: border-box;
+  border: 2px solid black;
+  display: block;
+  padding: 8px;
+  width: 100%;
+}
+
+#mailing-list .btn:hover{
+  background-color: #000;
+  color: #fff;
+  border: none;
+}
+
+/* Footer */
+
+
+#footer .title{
+  color: #fff;
+  font-size: 1.2rem;
+}
+#footer .heading-wrapper{
+  width: 100%;
+}
+
+#footer .row .col{
+  display: flex;
+  justify-content: space-evenly;
+  flex-shrink: 0;
+}
+#footer ul{
+  padding: 0;
+}
+#footer li {
+  list-style: none;
+  margin-bottom: 1.5px;
+}
+#footer a{
+  text-decoration: none;
+  color: #fff;
+  font-size: 0.8rem;
+}
+
+#footer #social-media ul{
+  display: flex;
+}
+
+#footer #social-media .title{
+  color: #fff;
+  font-size: 1.2rem;
+}
+
+#footer #social-media ul li{
+  margin-right: 10px;
+  border-radius: 50%;
+}
+
+#footer #social-media img{
+  width: 50px;
+  height: 50px;
+}
+
+#footer #social-media p{
+  color: #fff;
+  text-align: center;
+  font-size: 0.8rem;
+  font-weight: lighter;
+}
+
+#footer #copyright{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* App */
+#product-details .img{
+  padding: 0;
+  margin: 0;
+  width: 100%;
+  object-fit: contain;
+}
+
+#product-details .row{
+  width: 100%;
+  margin: 0;
+}
+
+#product-details .col-sm-6{
+  padding: 0;
+}
+
+#product-details #spec h4{
+  font-weight: 700;
+}
+
+#product-details #spec h6 {
+  margin-top: 20px;
+  margin-bottom: 9px;
+  font-weight: 600;
+}
+
+#product-details #spec p{
+  border-bottom: 2px solid black;
+}
+
+#product-details #spec p:last-child{
+  border-bottom: 2px solid black;
+  margin-bottom: 0px;
+}
+
+#product-details #spec #name{
+  border-bottom: none;
+  font-size: 1.4rem;
+}
+
+#product-details #description {
+  margin-top: 25px;
+  padding: 0 12px;
+}
+
+#product-details #description h6{
+  margin-bottom: 5px;
+  font-weight: 600;
+  font-size: 1rem;
+
+}
+
+#product-details .btn{
+  border-radius: 0px;
+  padding: 11px 10px;
+  width: 100%;
+  margin-top: 10px;
+}
+
+
+#product-details .container-fluid{
+  width: 100%;
+  padding: 0px;
+}
+
+@media only screen and (max-width: 991px){
+  #spec {
+    margin-top: 20px;
+  }
 }
