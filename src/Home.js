@@ -11,11 +11,11 @@ const Home = () => {
             {error && <div>{error}</div>}
             <div className="container banner">
                 <div className="row d-flex justify-content-between">
-                    <div className="col-sm-9 d-flex img-div">
+                    <div className="col-md-9 d-flex img-div">
                         <img src={process.env.PUBLIC_URL+"/images/amg.png"} className="" width="100%" alt="benz img"/>
                     </div>
 
-                    <div className="col col-sm-3 hero d-flex mt-5 justify-content-center">
+                    <div className="col-12 col-md-3 hero d-flex mt-5 justify-content-center">
                         <div className="mt-auto "><h2 className="mt-0">Built for speed</h2>
                         <p>Introducing the Benz, AMG GTS, our fastest car ever</p>
                         <a href="#categories" className="btn btn-dark">SHOP</a>
