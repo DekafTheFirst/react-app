@@ -4,7 +4,7 @@ import useFetch from "./useFetch";
 const BlogDetails = () => {
     const {id} = useParams();
 
-    const {data: blog, isPending, error} = useFetch('http://localhost:8000/blogs/' + id);
+    const {data: blog, isPending, error} = useFetch('https://my-json-server.typicode.com/GamerDTK/json-server/blogs/' + id);
     
     return ( 
         <div className="mt-4" id="product-details">

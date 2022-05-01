@@ -4,11 +4,10 @@ import useFetch from "./useFetch";
 import {BsArrowRightShort} from "react-icons/bs"
 
 const Home = () => {
-    const {data: blogs, isPending, error} = useFetch('http://localhost:8000/blogs');
+    const {data: blogs, isPending, error} = useFetch('https://my-json-server.typicode.com/GamerDTK/json-server/blogs');
 
     return ( 
         <div className = "home">
-            {error && <div>{error}</div>}
             <div className="container banner">
                 <div className="row d-flex justify-content-between">
                     <div className="col-md-9 d-flex img-div">
@@ -17,7 +16,7 @@ const Home = () => {
 
                     <div className="col-12 col-md-3 hero d-flex mt-5 justify-content-center">
                         <div className="mt-auto "><h2 className="mt-0">Built for speed</h2>
-                        <p>Introducing the Benz, AMG GTS, our fastest car ever</p>
+                        <p>Introducing the Benz, AMG GTR, our fastest car ever</p>
                         <a href="#categories" className="btn btn-dark">SHOP</a>
                         </div>
                     </div>
@@ -42,7 +41,7 @@ const Home = () => {
                 </div>
             </section>
 
-            
+            {error && <div>{error}</div>}
             {isPending && 
                 <div className="text-center">
                   <div className="spinner-border" role="status">

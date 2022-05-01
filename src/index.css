@@ -110,10 +110,15 @@ code {
 .home {
   margin: 0 40px;
 }
+.banner img{
+  object-fit: contain;
 
+}
 .hero .mt-auto{
   margin-top: auto;
 }
+
+
 .hero h2, .mailing-list h2  {
   font-weight: 1000;
   margin-bottom: 18px;
