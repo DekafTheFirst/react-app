@@ -52,10 +52,10 @@ const Footer = () => {
             <div className="col-12 col-md-6">
                 <h3 className="title">FOLLOW KAF'S WHIPS ON:</h3>
                 <ul>
-                    <li><Link to="/"><img src={process.env.PUBLIC_URL+"logos/facebook.png"} width="100%" alt="facebook" /></Link></li>
-                    <li><Link to="/"><img src={process.env.PUBLIC_URL+"logos/instagram.png"} width="100%" alt="instagram" /></Link></li>
-                    <li><Link to="/"><img src={process.env.PUBLIC_URL+"logos/twitter.png"} width="100%" alt="twitter" /></Link></li>
-                    <li><Link to="/"><img src={process.env.PUBLIC_URL+"logos/reddit.png"} width="100%" alt="reddit" /></Link></li>
+                    <li><Link to="/"><img src={process.env.PUBLIC_URL+"/logos/facebook.png"} width="100%" alt="facebook" /></Link></li>
+                    <li><Link to="/"><img src={process.env.PUBLIC_URL+"/logos/instagram.png"} width="100%" alt="instagram" /></Link></li>
+                    <li><Link to="/"><img src={process.env.PUBLIC_URL+"/logos/twitter.png"} width="100%" alt="twitter" /></Link></li>
+                    <li><Link to="/"><img src={process.env.PUBLIC_URL+"/logos/reddit.png"} width="100%" alt="reddit" /></Link></li>
                 </ul>
             </div>
             <div className="col-12 col-md-6" id="copyright">

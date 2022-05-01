@@ -12,7 +12,7 @@ const Home = () => {
             <div className="container banner">
                 <div className="row d-flex justify-content-between">
                     <div className="col-sm-9 d-flex img-div">
-                        <img src={process.env.PUBLIC_URL+"images/amg.png"} className="" width="100%" alt="benz img"/>
+                        <img src={process.env.PUBLIC_URL+"/images/amg.png"} className="" width="100%" alt="benz img"/>
                     </div>
 
                     <div className="col col-sm-3 hero d-flex mt-5 justify-content-center">

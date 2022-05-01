@@ -15,7 +15,7 @@ const BlogDetails = () => {
                         <div className="col-12 col-sm-6 mx-auto " id="top-row">
                             <div className="row">
                                 <div className="col">
-                                    <img src="/images/maybach.jpg" className="img" alt="benz img"/>
+                                    <img src={process.env.PUBLIC_URL+"/images/maybach.jpg"} className="img" alt="benz img"/>
                                 </div>
                                 <div className="col-12 col-lg-5" id="spec">
                                     <h4>{blog.price}</h4>
