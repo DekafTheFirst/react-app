@@ -7,7 +7,7 @@ const BlogDetails = () => {
     const {data: blog, isPending, error} = useFetch('https://my-json-server.typicode.com/GamerDTK/json-server/blogs/' + id);
     
     return ( 
-        <div className="mt-4" id="product-details">
+        <div className="mt-4 page">
             
             {blog && (
                 <div className="container-fluid">

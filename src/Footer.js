@@ -8,7 +8,7 @@ const Footer = () => {
             <div className="row">
                 <div className="col col-6 col-md-3">
                     <div className="heading-wrapper">
-                        <h3 className="title">ACCOUNT</h3>                
+                        <h3 className="title text-muted">ACCOUNT</h3>                
                         <ul>
                             <li><Link to="/">Sign in</Link></li>
                             <li><Link to="/">Register</Link></li>
@@ -18,7 +18,7 @@ const Footer = () => {
                 </div>
                 <div className="col col-6 col-md-3">
                     <div className="heading-wrapper">
-                        <h3 className="title">HELP</h3>
+                        <h3 className="title text-muted">HELP</h3>
                         <ul>
                             <li><Link to="/">Sign in</Link></li>
                             <li><Link to="/">Register</Link></li>
@@ -28,7 +28,7 @@ const Footer = () => {
                 </div>
                 <div className="col col-6 col-md-3">
                     <div className="heading-wrapper">
-                        <h3 className="title">ABOUT US</h3>
+                        <h3 className="title text-muted">ABOUT US</h3>
                         <ul>
                             <li><Link to="/">Sign in</Link></li>
                             <li><Link to="/">Register</Link></li>
@@ -38,7 +38,7 @@ const Footer = () => {
                 </div>
                 <div className="col col-6 col-md-3">
                     <div className="heading-wrapper">
-                        <h3 className="title">LEGAL</h3>
+                        <h3 className="title text-muted">LEGAL</h3>
                     
                     <ul>
                         <li><Link to="/">Sign in</Link></li>

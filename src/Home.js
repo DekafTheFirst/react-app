@@ -1,5 +1,5 @@
 import { Link } from "react-router-dom";
-import ProductList from "./ProductList";
+import ProductListInHome from "./ProductListInHome";
 import useFetch from "./useFetch";
 import {BsArrowRightShort} from "react-icons/bs"
 
@@ -17,12 +17,21 @@ const Home = () => {
                     <div className="col-12 col-md-3 hero d-flex mt-5 justify-content-center">
                         <div className="mt-auto "><h2 className="mt-0">Built for speed</h2>
                         <p>Introducing the Benz, AMG GTR, our fastest car ever</p>
-                        <a href="#categories" className="btn btn-dark">SHOP</a>
+                        <a href="#product-list" className="btn btn-dark">SHOP</a>
                         </div>
                     </div>
                 </div>
             </div>
             
+            {error && <div>{error}</div>}
+            {isPending && 
+                <div className="text-center">
+                  <div className="spinner-border" role="status">
+                    <span className="visually-hidden">Loading...</span>
+                  </div>
+                </div>}
+            {blogs && <ProductListInHome blogs={blogs} title="new relaeses" />}
+
             <section className="container-fluid" id="categories">
                 <div className="row d-flex">
                     <div className="col-sm-6 category">
@@ -41,14 +50,7 @@ const Home = () => {
                 </div>
             </section>
 
-            {error && <div>{error}</div>}
-            {isPending && 
-                <div className="text-center">
-                  <div className="spinner-border" role="status">
-                    <span className="visually-hidden">Loading...</span>
-                  </div>
-                </div>}
-            {blogs && <ProductList blogs={blogs} title="new relaeses" />}
+            
             
             <section className="container container-fluid mt-3" id="mailing-list">
                 <div className="row justify-content-center">
